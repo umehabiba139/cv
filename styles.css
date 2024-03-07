@@ -48,6 +48,10 @@ section {
 h2 {
     font-weight: bold; /* Bold headings */
     color: #343a40; /* Dark gray text */
+    background-color: #6c757d; /* Background color for headings */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Add some space below headings */
 }
 
 p {
@@ -84,7 +88,9 @@ footer {
         margin: 10px 0;
     }
 
-    
+    section {
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 769px) {
