@@ -6,11 +6,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width for content */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px;
 }
 
 header {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -32,26 +38,27 @@ nav ul li a {
 }
 
 section {
-    padding: 20px;
     background-color: #fff; /* White background */
-    margin-bottom: 20px;
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-bottom: 40px; /* Add some space between sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 40px;
 }
 
 h2 {
     font-weight: bold; /* Bold headings */
-    color: #333; /* Dark gray text */
+    color: #343a40; /* Dark gray text */
 }
 
 p {
-    color: #666; /* Medium gray text */
-    margin-bottom: 10px; /* Reduce gap between paragraphs */
+    color: #555; /* Medium gray text */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+    line-height: 1.4;
 }
 
 strong {
     font-weight: bold; /* Bold styling for important information */
-    color: #555; /* Dark gray text */
+    color: #343a40; /* Dark gray text */
 }
 
 ul {
@@ -60,8 +67,32 @@ ul {
 }
 
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        padding: 40px;
+    }
+
+    section {
+        padding: 40px;
+    }
 }
